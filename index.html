@@ -1,0 +1,479 @@
+<!doctype html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=yes">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta http-equiv="Cache-Control" content="no-cache">
+        <meta http-equiv="Expires" content="0">
+        <meta http-equiv="Pragma" content="no-cache">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://saibnco.com/">
+        <meta property="og:title" content="SAIB Intimate Cosmetic — 인티메이트 코스메틱 세이브앤코">
+        <meta property="og:image" content="./img/og-img01.jpg"/>
+        <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+        <title>세이브앤코, 인티메이트 코스메틱 세이브</title>
+        <link rel="stylesheet" href="./css/reset.css">
+        <link rel="stylesheet" href="./css/font.css">
+        <link rel="stylesheet" href="./css/saib.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script>
+            $(function(){
+                $(window).on("scroll", function() {
+                    if($(window).scrollTop() > 30) {
+                        $("#header").addClass("scroll");
+                        $(".big").css({
+                            display: "none"
+                        });
+                        $(".small").css({
+                            display: "block"
+                        });
+                        $(".top>img").css({
+                            display: "block"
+                        });
+                    }
+                    else {
+                        $("#header").removeClass("scroll");
+                        $(".big").css({
+                            display: "block",
+                            animation: "down 0.4s ease-in-out"
+                        });
+                        $(".small").css({
+                            display: "none"
+                        });
+                        $(".top>img").css({
+                            display: "none"
+                        });
+                    }
+                });
+            
+            
+                $(".top img").on("click", function() {
+                    $("html, body").animate({scrollTop: 0}, 1000);
+                });
+                
+                $(".navicon").on("click", function() {
+                    $(".nav-mobile").css({
+                        display: "block"
+                    });
+                    $(".nav-mobile > ul").css({
+                        display: "block"
+                    });
+                });
+
+                $(".nav-mobile").on("click", function(e) {
+                    if($(".nav-mobile > ul").is(e.target)) {
+                        return false;
+                    }
+                    else {
+                        $(".nav-mobile").css({
+                            display: "none"
+                        });
+                        $(".nav-mobile > ul").css({
+                            display: "none"
+                        });
+                    }
+				});
+            });
+        </script>
+    </head>
+    <body>
+        <div id="header">
+            <div class="header-wrap">
+                <div class="header-logo">
+                    <img src="./img/saib-logo.svg" alt="세이브앤코" onclick="window.open('https://saibnco.com/index.html')" class="big">
+                    <img src="./img/saib-logo02.svg" alt="세이브앤코" onclick="window.open('https://saibnco.com/index.html')" class="small">
+                </div>
+                <div class="nav-wrap">
+                    <ul class="nav left">
+                        <li><a href="#">ABOUT</a></li>
+                        <li><a href="#">SHOP</a></li>
+                        <li><a href="#">CAMPAIGN</a></li>
+                        <li><a href="#">SAIB—SAID</a> <img src="./img/_blank.png" alt="새창으로 세이브 세이드 이동" onclick="window.open('https://saibsaid.com/')"></li>
+                    </ul>
+                    <ul class="nav right">
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">LOGIN</a></li>
+                        <li><a href="#">CART</a> <span>0</span></li>
+                        <li><a href="#">MY PAGE</a></li>
+                        <li class="sns-img">
+                            <img src="./img/global.png" alt="새창으로 언어 선택 사이트 이동" onclick="window.open('https://en.saib.love/')"><img src="./img/insta.png" alt="새창으로 세이브앤코 인스타그램 채널 이동" onclick="window.open('https://www.instagram.com/saibnco/')"><img src="./img/facebook.png" alt="새창으로 세이브앤코 페이스북 채널 이동" onclick="window.open('https://www.facebook.com/saibnco/')">
+                        </li>
+                    </ul>
+                    <div class="navicon"><img src="./img/menu-img01.png" alt="메뉴"></div>
+                    <div class="nav-mobile">
+                        <ul>
+                            <li><a href="#">LOGIN</a></li>
+                            <li><a href="#">MY PAGE</a></li>
+                            <li><a href="#">CART (0)</a></li>
+                            <li><a href="#">ABOUT</a></li>
+                            <li><a href="#">SHOP</a></li>
+                            <li><a href="#">CAMPAIGN</a></li>
+                            <li><a href="#">SAIB—SAID</a><img src="./img/_blank.png" alt="새창으로 세이브 세이드 이동" onclick="window.open('https://saibsaid.com/')"></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li class="sns-img">
+                                <img src="./img/global.png" alt="새창으로 언어 선택 사이트 이동" onclick="window.open('https://en.saib.love/')"><img src="./img/insta.png" alt="새창으로 세이브앤코 인스타그램 채널 이동" onclick="window.open('https://www.instagram.com/saibnco/')"><img src="./img/facebook.png" alt="새창으로 세이브앤코 페이스북 채널 이동" onclick="window.open('https://www.facebook.com/saibnco/')">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <img src="./img/global.png" alt="새창으로 언어 선택 사이트 이동" onclick="window.open('https://en.saib.love/')">
+            </div>
+        </div>
+
+        <div id="container">
+            <div class="contents">
+                <div class="video-wrap">
+                    <div>
+                        <iframe src="https://player.vimeo.com/video/301545193?autoplay=1&amp;byline=0&amp;portrait=0&amp;muted=1" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+                    </div>
+                </div>
+
+                <div class="product-wrap">
+                    <div class="product">
+                        <h4>OUR PRODUCTS</h4>
+                        <ul>
+                            <li onclick="location.href='https://www.saibnco.com/product/detail.html?product_no=11&cate_no=42&display_group=1'">
+                                <div class="product-img img01"></div>
+                                <div>파우치에 휴대하기 좋은</div>
+                                <h7>세이브 프리미엄 콘돔 (3pcs)</h7>
+                                <div class="price">7,900원</div>
+                            </li>
+                            <li onclick="location.href='https://www.saibnco.com/product/detail.html?product_no=53&cate_no=42&display_group=1'">
+                                <div class="product-img img02"></div>
+                                <div>천연유래성분으로 순한</div>
+                                <h7>세이브 네츄럴 포밍 여성 청결제</h7>
+                                <div class="price sale">29,500원 <span>→ 최대 25% 할인 중</span></div>
+                            </li>
+                            <li onclick="location.href='https://www.saibnco.com/product/detail.html?product_no=74&cate_no=42&display_group=1'">
+                                <div class="product-img img03"></div>
+                                <div>더 얇고 안전한 세이브 신제품</div>
+                                <h7>세이브 프리미엄 콘돔 리얼필 (6pcs)</h7>
+                                <div class="price">12,900원</div>
+                            </li>
+                            <li onclick="location.href='https://www.saibnco.com/product/detail.html?product_no=74&cate_no=42&display_group=1'">
+                                <div class="product-img img04"></div>
+                                <div>집에 두고 쓰기 좋은</div>
+                                <h7>프리미엄 콘돔 대용량 (24pcs)</h7>
+                                <div class="price sale"><s>49,500원</s> <span>→ 42,100원</span></div>
+                            </li>
+                        </ul>
+                        <div class="pro-btn">
+                            <input type="button" value="SHOP 바로가기" onclick="location.href='https://saibnco.com/product/list.html?cate_no=42'">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="promise-wrap">
+                    <div class="promise">
+                        <h4>OUR PROMISE</h4>
+                        <div class="pro-banner">
+                            <input type="radio" name="pro-pag" id="pro01" checked>
+                            <input type="radio" name="pro-pag" id="pro02">
+                            <input type="radio" name="pro-pag" id="pro03">
+                            <input type="radio" name="pro-pag" id="pro04">
+                            <input type="radio" name="pro-pag" id="pro05">
+                            <ul>
+                                <li>
+                                    <div class="promise-img">
+                                        <img src="./img/promise-img01.jpeg" alt="">
+                                        <img src="./img/promise-m-img01.jpeg" alt="">
+                                    </div>
+                                    <div class="txt">
+                                        <h3>01 —</h3>
+                                        <p>embracing<br>modern<br>femininity</p>
+                                        <p class="desc">세이브는 새롭고 주체적인 <br>현대적 여성스러움을 제시합니다.</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="promise-img">
+                                        <img src="./img/promise-img02.jpeg" alt="">
+                                        <img src="./img/promise-m-img02.jpeg" alt="">
+                                    </div>
+                                    <div class="txt">
+                                        <h3>02 —</h3>
+                                        <p>making<br>women<br>proud</p>
+                                        <p class="desc">세이브 제품을 사용하는 것이 여성의<br>자랑스러움이 되었으면 합니다.</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="promise-img">
+                                        <img src="./img/promise-img03.jpeg" alt="">
+                                        <img src="./img/promise-m-img03.jpeg" alt="">
+                                    </div>
+                                    <div class="txt">
+                                        <h3>03 —</h3>
+                                        <p>being simple<br>with no frills</p>
+                                        <p class="desc down">제품이나 메세지에서도<br>불필요함을 제거한 심플함을 추구합니다.</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="promise-img">
+                                        <img src="./img/promise-img04.jpeg" alt="">
+                                        <img src="./img/promise-m-img04.jpeg" alt="">
+                                    </div>
+                                    <div class="txt">
+                                        <h3>04 —</h3>
+                                        <p>being frank<br>&amp; open</p>
+                                        <p class="desc down">제조 공정이나 성분 등 필수 정보를<br>투명하게 공개합니다.</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="promise-img">
+                                        <img src="./img/promise-img05.jpeg" alt="">
+                                        <img src="./img/promise-m-img05.jpeg" alt="">
+                                    </div>
+                                    <div class="txt">
+                                        <h3>05 —</h3>
+                                        <p>keeping it<br>healthy, natural &amp;<br>female-friendly</p>
+                                        <p class="desc">건강한 자연 성분으로<br>여성친화적인 제품만을 만듭니다.</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="promise-img">
+                                        <img src="./img/promise-img01.jpeg" alt="">
+                                        <img src="./img/promise-m-img01.jpeg" alt="">
+                                    </div>
+                                    <div class="txt">
+                                        <h3>01 —</h3>
+                                        <p>embracing<br>modern<br>femininity</p>
+                                        <p class="desc">세이브는 새롭고 주체적인 <br>현대적 여성스러움을 제시합니다.</p>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="pro-pagination">
+                                <label for="pro01"></label>
+                                <label for="pro02"></label>
+                                <label for="pro03"></label>
+                                <label for="pro04"></label>
+                                <label for="pro05"></label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-wrap">
+                    
+
+                    <div class="review">
+                        <div class="re-banner">
+                            <input type="radio" name="re-pag" id="re01" checked>
+                            <input type="radio" name="re-pag" id="re02">
+                            <ul>
+                                <li onclick="location.href='https://www.saibnco.com/product/detail.html?product_no=28&cate_no=42&display_group=1'">
+                                    <div class="re-header">
+                                        <img src="./img/emoji01.svg" alt="">
+                                        <img src="./img/review-img01.svg" alt="">
+                                    </div>
+                                    <div class="re-desc">
+                                        인생 콘돔이에요. 콘돔 특유의 기분 나쁜 <br>
+                                        고무 향도 싫고, 그 향을 감추고자 인공 향료<br>
+                                        를 사용해서 지나치게 달달한 향이 나는 것도<br>
+                                        찜찜했는데 이 제품 처음 만나고는 불쾌한<br>
+                                        향도 없고 손 끝에 남는 기분 나쁜 오일리함<br>
+                                        도 없었어요. 관계 후에 씻어낼 때도 확실히<br>
+                                        다른 느낌이라 사용 후 찾아봤더니 역시 좋은<br>
+                                        원료들로만 만든 착한 제품이더군요. SAIB<br>
+                                        를 만난 이후로 다른 콘돔은 아예 안 씁니다.
+                                    </div>
+                                    <div class="re-sub">
+                                        세이브 프리미엄 콘돔 대용량 (24pcs)<br>
+                                        sol**** | 2020.6.5
+                                    </div>
+                                </li>
+                                <li onclick="location.href='https://www.saibnco.com/product/detail.html?product_no=35&cate_no=42&display_group=1'">
+                                    <div class="re-header">
+                                        <img src="./img/emoji02.svg" alt="">
+                                        <img src="./img/review-img01.svg" alt="">
+                                    </div>
+                                    <div class="re-desc">
+                                        아내를 사랑한다면 구매하지 않을 이유가<br>
+                                        없는 좋은 제품입니다. 다른 콘돔은 쓰고도<br>
+                                        찝찝한데 깔끔한 느낌이 좋았어요. 아내도<br>
+                                        좋아했고 사랑받는다는 걸 느끼는 것 같다고<br>
+                                        합니다. 수딩케어 젤은 자극적이지 않은<br>
+                                        알로에를 바른 느낌이고 콘돔도 깔끔하고<br>
+                                        관계도 충분히 만족했습니다. 여성들 건강을<br>
+                                        생각한 더 다양한 제품이 나왔으면 하네요. 감사합니다.
+                                    </div>
+                                    <div class="re-sub">
+                                        세이브 콘돔 + 수딩 케어 젤 세트<br>
+                                        카카오회원 | 2020.6.11
+                                    </div>
+                                </li>
+                                <li onclick="location.href='https://www.saibnco.com/product/detail.html?product_no=28&cate_no=42&display_group=1'">
+                                    <div class="re-header">
+                                        <img src="./img/emoji03.svg" alt="">
+                                        <img src="./img/review-img01.svg" alt="">
+                                    </div>
+                                    <div class="re-desc">
+                                        속옷을 고르거나 생리대를 고를 때는 내 몸에<br>
+                                        닿는다는 이유 하나만으로 항상 신중하게<br>
+                                        고민해 왔었는데 몸속 깊이 접촉하는 콘돔<br>
+                                        사용에는 오히려 더 무신경했던 것 같아요!<br>
+                                        콘돔에 나쁜 화학 물질이 많다는 뉴스를 접하<br>
+                                        고 걱정을 하고 있던 차에 세이브앤코 광고를<br>
+                                        보고 구매하게 되었어요. 그동안 무심결에<br>
+                                        나쁜 화학물질에 노출되었다고 생각하니<br>
+                                        걱정이 앞서면서 앞으로는 더 꼼꼼히 살펴<br>
+                                        보고 구매하려고 해요~
+                                    </div>
+                                    <div class="re-sub">
+                                        세이브 프리미엄 콘돔 대용량 (24pcs)<br>
+                                        seo**** | 2020.6.1
+                                    </div>
+                                </li>
+                                <li onclick="location.href='https://www.saibnco.com/product/detail.html?product_no=35&cate_no=42&display_group=1'">
+                                    <div class="re-header">
+                                        <img src="./img/emoji04.svg" alt="">
+                                        <img src="./img/review-img01.svg" alt="">
+                                    </div>
+                                    <div class="re-desc">
+                                        콘돔과 수딩젤 모두 매우 만족합니다.<br>
+                                        사실 기능을 떠나서라도 취지와 성분을 따져<br>
+                                        만든 제품을 시중에 찾기가 어려워 사용감이<br>
+                                        좀 별로더라도 사용하고자 주문해봤는데<br>
+                                        콘돔도 훌륭하고 특히 수딩 젤이 정말 맘에<br>
+                                        들어요. 최근 건조함 때문에 고민이 많아서<br>
+                                        젤이 꼭 필요했었는데 끈적임이 전혀 남지<br>
+                                        않으면서도 얇게 발리는 데 아주 부드럽게<br>
+                                        미끌거려서 사용하기가 정말 좋아요.
+                                    </div>
+                                    <div class="re-sub">
+                                        세이브 콘돔 + 수딩 케어 젤 세트<br>
+                                        daw**** | 2020.6.11
+                                    </div>
+                                </li>
+                                <li onclick="location.href='https://www.saibnco.com/product/detail.html?product_no=28&cate_no=42&display_group=1'">
+                                    <div class="re-header">
+                                        <img src="./img/emoji05.svg" alt="">
+                                        <img src="./img/review-img01.svg" alt="">
+                                    </div>
+                                    <div class="re-desc">
+                                        대용량이 나오기 전부터 애용했어요!<br>
+                                        남자친구와 대용량이 나오면 좋겠다는 얘기<br>
+                                        를 자주(?) 나눴는데, 대용량으로 구매할 수<br>
+                                        있어서 경제 적으로나 환경 적으로나 여러<br>
+                                        모로 좋아요!  사람들이 세이브엔코에 대해<br>
+                                        더 많이 알았으면 좋겠어요 :)
+                                    </div>
+                                    <div class="re-sub">
+                                        세이브 프리미엄 콘돔 대용량 (24pcs)<br>
+                                        ddo**** | 2020.4.26
+                                    </div>
+                                </li>
+                                <li onclick="location.href='https://www.saibnco.com/product/detail.html?product_no=28&cate_no=42&display_group=1'">
+                                    <div class="re-header">
+                                        <img src="./img/emoji06.svg" alt="">
+                                        <img src="./img/review-img01.svg" alt="">
+                                    </div>
+                                    <div class="re-desc">
+                                        이 제품을 처음 알았을 때 “이제까지 나만 몰<br>
+                                        랐어.”라는 푸념과 함께 바로 구입했답니다.<br>
+                                        항상 약간의 질염을 달고 살았는데  이제까지<br>
+                                        아무 생각 없이 사용하던 콘돔이 원인이었던 <br>
+                                        것 같아요. 사용 느낌은 별다르지 않았지만<br>
+                                        더욱 안전하게 부부관계를 할 수 있게 되어<br>
+                                        좋았어요~  케이스도 예쁘고, 앞으로 재구매 <br>
+                                        의향 있네요.^^
+                                    </div>
+                                    <div class="re-sub">
+                                        세이브 프리미엄 콘돔 대용량 (24pcs)<br>
+                                        son**** | 2020.5.22
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="re-pagination">
+                                <label for="re01"></label>
+                                <label for="re02"></label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="campaign-wrap">
+                    <div class="campaign">
+                        <h4><a href="https://www.saibnco.com/product/list_lookbook.html?cate_no=43" target="_self" alt="campaign 상세페이지">CAMPAIGN&nbsp;&nbsp;→</a></h4>
+                        <div>
+                            <img src="./img/campaign-img01.jpg">
+                            <div>
+                                <h5>female<br>empowerment</h5>
+                                <p>세이브는 판매 수익의 10%를 <br>성 평등과 여성 권리 증진을 위한 <br>다양한 캠페인에 사용합니다.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="link-wrap">
+                    <div class="link">
+                        <ul>
+                            <li onclick="location.href='https://saibnco.com/company/press.html'">
+                                <h5>AWARDS&nbsp;&nbsp;→</h5>
+                                <p>세이브앤코 수상내역</p>
+                            </li>
+                            <li onclick="location.href='https://saibnco.com/company/press.html#1'">
+                                <h5>PRESS&nbsp;&nbsp;→</h5>
+                                <p>세이브앤코 수상내역</p>
+                            </li>
+                            <li onclick="location.href='https://saibnco.com/company/about.html?#1'">
+                                <h5>STOCKIST&nbsp;&nbsp;→</h5>
+                                <p>오프라인 판매처</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="awards-wrap">
+                    <div class="awards">
+                        <img src="./img/awards-img01.jpg" alt="세이브앤코 수상내역">
+                    </div>
+                </div>
+
+                <div class="insta-wrap">
+                    <div class="insta">
+                        <h4>instagram — @saibnco</h4>
+                        <ul>
+                            <li><a href="https://www.instagram.com/p/CHHr0yiMF6E/" target="_blank" alt=""><img src="./img/insta01.jpg" alt=""></a></li>
+                            <li><a href="https://www.instagram.com/p/CHHrlykF7Lh/" target="_blank" alt=""><img src="./img/insta02.jpg" alt=""></a></li>
+                            <li><a href="https://www.instagram.com/p/CG9Q722D-iR/" target="_blank" alt=""><img src="./img/insta03.jpg" alt=""></a></li>
+                            <li><a href="https://www.instagram.com/p/CG9Q4qAld41/" target="_blank" alt=""><img src="./img/insta04.jpg" alt=""></a></li>
+                            <li><a href="https://www.instagram.com/p/CG9Q1jsHI1q/" target="_blank" alt=""><img src="./img/insta05.jpg" alt=""></a></li>
+                            <li><a href="https://www.instagram.com/p/CGrvnx0BiJC/" target="_blank" alt=""><img src="./img/insta06.jpg" alt=""></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="footer">
+            <div class="footer-wrap">
+                <div class="sns">
+                    <ul>
+                        <li onclick="window.open('https://en.saib.love/')"><img src="./img/global02.png" alt="새창으로 언어 선택 사이트 이동"></li>
+                        <li onclick="window.open('https://www.instagram.com/saibnco/')"><img src="./img/insta02.png" alt="새창으로 세이브앤코 인스타그램 채널 이동"></li>
+                        <li onclick="window.open('https://www.facebook.com/saibnco/')"><img src="./img/facebook02.png" alt="새창으로 세이브앤코 페이스북 채널 이동"></li>
+                    </ul>
+                </div>
+                <div class="info">
+                    <span class="company">(주) 세이브앤코</span>
+                    <span> | 대표 박지원 | 사업자등록번호 165-87-00778 <span><span>|</span> 통신판매업 제 2018-서울강남-02911 호</span></span>
+                    <p>hello@saibnco.com | TEL 02-6204-1023 <span><span>|</span> 서울특별시 강남구 논현로158길 28, 2층</span></p>
+                    <p class="copyright">Copyright © 세이브앤코 All Rights Reserved</p>
+                </div>
+                <div class="guide">
+                    <p>
+                        <a href="https://saibnco.com/member/agreement.html">이용약관</a> | <a href="https://saibnco.com/member/privacy.html">개인정보취급방침</a> | <a href="https://saibnco.com/shopinfo/guide.html">가이드</a>
+                    </p>
+                    <p>
+                        고객님은 안전거래를 위해 현금 등으로 결제시 저희 쇼핑몰에서 가입한 PG사의 구매안전서비스를 이용하실 수 있습니다. | KG 이니시스 에스크로 <a href="http://www-old.inicis.com/images/0417_pop1.jsp?no_comp=1658700778" target="_blank">(서비스가입사실확인)</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="help">
+            <div class="top"><img src="./img/top.png" alt="최상단으로 이동"></div>
+            <div class="channelTalk"></div>
+        </div>
+    </body>
+</html>
